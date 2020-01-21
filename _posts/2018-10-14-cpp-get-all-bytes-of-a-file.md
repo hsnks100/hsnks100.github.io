@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 tags: [cpp, buffer]
 ---
 ```cpp

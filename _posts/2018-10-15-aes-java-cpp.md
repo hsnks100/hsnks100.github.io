@@ -1,6 +1,6 @@
 ---
 tags: [aes, java, cpp]
-layout: post
+layout: posts
 ---
 # aes-java-cpp
 
