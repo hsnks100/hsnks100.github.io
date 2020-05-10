@@ -48,6 +48,8 @@ ui 상에서 디버거 체크
 
 기본적인 mame debugger 의 사용법(https://docs.mamedev.org/debugger/cheats.html)은 각자 익히시고 따라하기 식으로 설명한다.  
 
+![image](https://user-images.githubusercontent.com/3623889/81497681-e6360280-92fa-11ea-8da0-0abf50767209.png) 
+
 ```
 1. 처음 마을에 도착한 후 디버거 창에서 ci 를 입력 - 메모리 검색 초기화
 2. 한대 맞고 cn de - 감소한 값 찾기
@@ -63,7 +65,6 @@ FF831D 는 바꿨을 때 피통이 바뀌지 않고, FF8641 을 AA 로 고쳤을
 
 ![image](https://user-images.githubusercontent.com/3623889/81499458-c573aa00-9306-11ea-9b73-16b0c1e70e13.png) 
 
-![image](https://user-images.githubusercontent.com/3623889/81497681-e6360280-92fa-11ea-8da0-0abf50767209.png) 
 
 이제 어떤 코드에서 해당 변수를 바꾸는지 찾아야 하는데 이 때 쓰는 디버거 명령은 wp
 
@@ -90,6 +91,7 @@ FF831D 는 바꿨을 때 피통이 바뀌지 않고, FF8641 을 AA 로 고쳤을
 
 
 # Code Cave 를 향해
+
 # 던전 앤 드래곤의 cpu 모델
 
 던드의 롬파일의 식별자는 ddsom 이며 자식롬 구조는 ddsomxx 으로 정해져있다.
@@ -98,7 +100,8 @@ FF831D 는 바꿨을 때 피통이 바뀌지 않고, FF8641 을 AA 로 고쳤을
 
 mame 소스의 cps2.cpp 를 보면 던드의 cpu 모델은 68000(68k)다.  
 
+# M86K Assembler 
 
 
-# 
+
 
