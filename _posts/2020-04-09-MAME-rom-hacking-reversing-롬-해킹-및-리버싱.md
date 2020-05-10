@@ -10,9 +10,50 @@
 
 이 작업은 mame 의 debugger 툴에서 똑같이 진행할 수 있다. 간단한거부터 해볼까?
 
+우리의 타겟이 되는 게임은 __Dungeons & Dragons: Shadow over Mystara__ 일명 던전 앤 드래곤이라는 게임이다. 줄여서 던드라고 칭하겠다.
+
+이 게임은 내가 기억하기에 죽어가던 아케이드 시장에서 마지막으로 꽃을 피운 작품이다. 타임어택과 같은 방식을 제외한 일반 게임 진행시 1시간을 넘어가는 말도 안되는 볼륨을 보여준다. 고작 20MB 의 용량으로. 여러명에서 함께 하는 게임으로 아마 아케이드 시장에서 가장 성공한 게임이 아닌가 싶다. 이전의 타워오브둠에서의 단점이었던 빈약한 액션감을 보완하면서 최고의 게임으로 평가받고 있고, 현재에도 매니아들은 이 게임을 여전히 매일 매일 즐기고 있다. ( 액션감을 너무 강조한 나머지 난이도가 말이 안되게 쉬워졌지만 )
+
+# 에뮬레이터 
+
+mame 에 디버거를 띄우는 방법부터 알아야 한다. 일단 MAC 과 WINDOWS 기준으로 설명한다.  
+
+## MAC
+
+버전정보: sdlmame 0.174
+
+https://nagarry.tistory.com/182 - 설치법
+
+https://sdlmame.lngn.net/stable/ - 다운로드
+
+MAC 에서는 sdlmame 0.174 를 써서 압축을 풀고  ./mame64 -debug 
+
+## WINDOWS
+
+버전정보: mame plus 0.167
+
+ui 상에서 디버거 체크 
 
 
-# MAME 의 게임 상태 저장방식
+
+# 던전 앤 드래곤의 cpu 모델
+
+던드의 롬파일의 식별자는 ddsom 이며 자식롬 구조는 ddsomxx 으로 정해져있다.
+
+![image](https://user-images.githubusercontent.com/3623889/81494487-453c4d00-92e4-11ea-980a-8cf261dae81f.png)
+
+mame 소스의 cps2.cpp 를 보면 던드의 cpu 모델은 68000(68k)다.  
+
+# 가장 간단한 원시적인 게임 조작 
+
+지금부터 가장 원시적인 게임 조작을 해보겠다. 캐릭터의 피통을 맞아도 데미지가 안먹게 해보겠다.
+
+위에서 지시한 대로 세팅하고 롬파일을 구동시키면 디버거가 뜬다. 
+
+![image](https://user-images.githubusercontent.com/3623889/81496755-ed5a1200-92f4-11ea-9f7e-297eed8d4e98.png) 
+![image](https://user-images.githubusercontent.com/3623889/81496762-f814a700-92f4-11ea-9f12-fd22331a5f22.png)
+
+
 
 # M68K
 
