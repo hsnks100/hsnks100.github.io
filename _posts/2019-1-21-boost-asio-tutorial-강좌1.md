@@ -1,5 +1,5 @@
 ---
-layout: posts
+toc: true 
 tags: [cpp, asio, boost]
 ---
 
