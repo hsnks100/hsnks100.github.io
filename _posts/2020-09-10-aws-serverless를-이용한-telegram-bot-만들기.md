@@ -256,8 +256,9 @@ https://api.telegram.org/bot${telegram_token}/setWebhook?url=${callback_url}
 
 이에 맞춰서 웹브라우저에서 호출해보자.
 
+```
 https://api.telegram.org/bot1349292513:AAEyIjGis0AHzrEuP4uFkRl4AvgLM*********/setWebhook?url=https://**************.execute-api.ap-northeast-2.amazonaws.com/default/telegram-echo-dev-helloWorld
-
+```
 이렇게 호출을 하면 웹훅이 등록된다고 되어있다. 등록해보자. Webhook was set. 과 같은 문구가 뜨면 성공. 우리 telegless_bot 을 친구 추가하고 말 걸어보자.
 
 CloudWatch 에 우리가 추가한 로그가 찍혀있는지 확인해보자. @@@@@@@@@@ 가 많아서 확인하기 쉬울 거다.
