@@ -223,13 +223,12 @@ https://xxxxxxxxx.execute-api.ap-northeast-2.amazonaws.com/dev/hello-world?var=K
 BotFather, [10.09.20 17:41]
 Alright, a new bot. How are we going to call it? Please choose a name for your bot.
 
-```
-telegless_bot
+input: telegless_bot
 
 BotFather, [10.09.20 17:42]
 Good. Now let's choose a username for your bot. It must end in `bot`. Like this, for example: TetrisBot or tetris_bot.
 
-teleless_bot
+input: teleless_bot
 
 BotFather, [10.09.20 17:42]
 Done! Congratulations on your new bot. You will find it at t.me/teleless_bot. You can now add a description, about section and profile picture for your bot, see /help for a list of commands. By the way, when you've finished creating your cool bot, ping our Bot Support if you want a better username for it. Just make sure the bot is fully operational before you do this.
