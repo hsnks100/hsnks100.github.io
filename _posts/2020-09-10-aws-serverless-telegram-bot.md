@@ -88,6 +88,8 @@ module.exports.helloWorld = (event, context, callback) => {
 };
 
 ```
+
+```
 ╭─dire@dire-81w4 ~/workspace/telegram-echo
 ╰─$ cat serverless.yml
 # Welcome to serverless. Read the docs
