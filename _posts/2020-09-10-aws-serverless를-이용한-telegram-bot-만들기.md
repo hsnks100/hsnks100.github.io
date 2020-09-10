@@ -271,7 +271,7 @@ CloudWatch 에 우리가 추가한 로그가 찍혀있는지 확인해보자. @@
 
 handler.js
 
-```
+```js
 'use strict';
 
 const AWS = require('aws-sdk');
