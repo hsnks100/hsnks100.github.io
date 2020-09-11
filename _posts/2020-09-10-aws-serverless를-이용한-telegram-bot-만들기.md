@@ -17,7 +17,13 @@ aws.lambda, aws.cloudwatch, aws.dynamodb, aws.apigateway
 
 # 비용은?
 
-비용이 또 기가 막히다.
+비용이 또 ㅁㅊㄸ.
+
+![image](https://user-images.githubusercontent.com/3623889/92875003-85067300-f443-11ea-9e29-079e2f468fc0.png)
+
+월 200만건에 각 실행시간 100ms 에 대해서 월 0.2$ 라고 나온다.
+
+개인이나 스타트업입장의 개발에서는 공짜나 다름없다.
 
 # 개발 환경 꾸리기
 ## nodejs & npm 설치
