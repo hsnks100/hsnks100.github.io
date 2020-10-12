@@ -1,3 +1,14 @@
+<div>
+  <script src="https://utteranc.es/client.js"
+        repo="hsnks100/hsnks100.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+</div>
+
 <div class="page__comments">
   {% capture comments_label %}{{ site.data.ui-text[site.locale].comments_label | default: "Comments" }}{% endcapture %}
   {% case site.comments.provider %}
@@ -158,10 +169,3 @@
   {% endcase %}
 </div>
 
-<script src="https://utteranc.es/client.js"
-        repo="hsnks100/hsnks100.github.io"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
