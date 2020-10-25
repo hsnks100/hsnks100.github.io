@@ -1,6 +1,6 @@
 ---
 toc: true
-publish: false
+hidden: true
 ---
 
 WOW
