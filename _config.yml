@@ -68,8 +68,8 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
+search                   : true #, false (default)
+search_full_content      : true #, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
@@ -115,7 +115,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "제가 접하는 많은 것들을 공유하고 싶습니다."
   location         : "Seoul"
-  email            :
+  email            : hsnks100@gmail.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
