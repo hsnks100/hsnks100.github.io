@@ -21,4 +21,5 @@ ECMAScript 5.1 표준까지 지원하고 낮은 메모리 소비를 위한 최�
 
 # 기본구조 예측
 
-wow
+wow![2020-07-31-193646_1920x1080_scrot.png]({{site.baseurl}}/_posts/2020-07-31-193646_1920x1080_scrot.png)
+
