@@ -1,6 +1,7 @@
 ---
 toc: true
 hidden: true
+published: true
 ---
 
 # Jerryscript 란?
@@ -20,3 +21,4 @@ ECMAScript 5.1 표준까지 지원하고 낮은 메모리 소비를 위한 최�
 
 # 기본구조 예측
 
+wow
