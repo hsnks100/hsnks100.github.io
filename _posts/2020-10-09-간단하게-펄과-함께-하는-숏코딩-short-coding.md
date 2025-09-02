@@ -1,3 +1,10 @@
+---
+title: "간단하게 펄과 함께 하는 숏코딩 (Short Coding)"
+date: 2020-10-09
+categories: [programming]
+tags: [perl, short-coding, algorithm]
+---
+
 # 숏코딩
 
 숏코딩은 코드 길이를 극한까지 줄이는 코딩을 의미한다. 

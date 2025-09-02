@@ -1,7 +1,11 @@
 ---
+title: "Rust에서 Byte Array 다루기"
+date: 2022-05-15
 toc: true
 hidden: false
 published: true
+categories: [programming]
+tags: [rust, byte-array]
 ---
 
 # 바이트 다루기

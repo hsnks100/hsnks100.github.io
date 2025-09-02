@@ -1,5 +1,9 @@
 ---
-toc: true 
+title: "Shell과 Perl의 찰떡궁합"
+date: 2020-10-02
+toc: true
+categories: [programming]
+tags: [shell, perl, unix]
 ---
 
 # 쉘과 Perl의 환상 조합
