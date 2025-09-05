@@ -23,7 +23,7 @@ author_profile: true
 
 ## 연락처
 
-- **Email**: hsnks100@gmail.com
+- **Email**: caromdreamer@gmail.com
 - **GitHub**: [hsnks100](https://github.com/hsnks100)
 
 블로그를 방문해주셔서 감사합니다. 궁금한 점이 있으시면 언제든 연락주세요!
