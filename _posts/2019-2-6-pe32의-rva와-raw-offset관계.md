@@ -1,4 +1,11 @@
-파일 리버싱에 있어서 RVA 와 RAW offset 을 서로간의 위치 관계를 잘 매핑해야한다. 
+---
+toc: true
+tags: [pe32, rva, raw-offset, reverse-engineering, windows]
+---
+
+# PE32의 RVA와 RAW offset 관계
+
+파일 리버싱에 있어서 RVA와 RAW offset을 서로간의 위치 관계를 잘 매핑해야 한다. 
 
 여러가지 이유가 있겠지만 그 중 하나는 파일 패치를 위해 바이너리를 고치는 경우, 파일에서 고친부분이 프로세스가 메모리에 올라갔을 때는 몇번지인지 정확히 알 필요가 있다.
 

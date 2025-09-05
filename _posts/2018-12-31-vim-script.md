@@ -1,3 +1,8 @@
+---
+toc: true
+tags: [vim, script, editor, programming]
+---
+
 # Vim Script를 배워봅시다
 
 이 페이지는 Vim 사용법을 알려주는 페이지가 아닙니다. 좀 더 고급 사용자로 가기 위해 Vim Script를 배우는 페이지입니다.

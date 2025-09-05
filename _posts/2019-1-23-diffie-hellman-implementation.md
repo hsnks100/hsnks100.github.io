@@ -1,4 +1,13 @@
-# C++ version
+---
+toc: true
+tags: [c++, cryptography, diffie-hellman, algorithm]
+---
+
+# Diffie-Hellman 키 교환 구현
+
+Diffie-Hellman 키 교환 알고리즘을 C++로 구현해보자. 이 알고리즘은 두 당사자가 공개 채널을 통해 비밀 키를 안전하게 공유할 수 있게 해주는 암호학적 프로토콜이다.
+
+## C++ version
 
 ```cpp
 // The biggest 64bit prime

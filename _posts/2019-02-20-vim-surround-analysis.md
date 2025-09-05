@@ -1,3 +1,8 @@
+---
+toc: true
+tags: [vim, plugin, analysis, programming]
+---
+
 # vim-surround 분석
 
 vim-surround 플러그인이 어떻게 구현되었는지 궁금해졌습니다.

@@ -1,8 +1,6 @@
 ---
-title: "간단하게 펄과 함께 하는 숏코딩 (Short Coding)"
-date: 2020-10-09
-categories: [programming]
-tags: [perl, short-coding, algorithm]
+toc: true
+tags: [perl, short-coding, algorithm, programming]
 ---
 
 # 숏코딩
@@ -157,5 +155,5 @@ I=input;n,m=map(int,I().split());*s,=map(I,['']*n);print(sum(I()in s for _ in[0]
 
 보다 6 bytes 줄인 78 bytes 로 1등이다~^_^
 
-더 줄일 방법이 있을까요? 제 펄 실력의 한계네요.
+더 줄일 방법이 있을까요?
 

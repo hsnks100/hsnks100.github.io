@@ -1,3 +1,8 @@
+---
+toc: true
+tags: [mame, rom-hacking, reverse-engineering, game, emulator]
+---
+
 # MAME 기반의 게임 해킹 
 
 최근에 중국 해킹롬 the king of the fighters 98 을 플레이 하다가 문득, 고전게임의 롬파일 수정은 어떻게 하는걸까? 라는 생각을 가졌다. 고전게임도 결국 프로그래머가 프로그래밍한 프로그램일텐데, 지가 뛰어봐야 폰노이만 모델 아닌가? 라는 생각에 자료를 뒤지기 시작했다.
