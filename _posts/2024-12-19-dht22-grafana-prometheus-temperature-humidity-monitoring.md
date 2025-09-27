@@ -1,4 +1,5 @@
 ---
+title: "DHT22와 Grafana, Prometheus를 이용한 집안 온습도 모니터링 시스템"
 toc: true
 tags: [iot, dht22, grafana, prometheus, temperature, humidity, monitoring, esp32, arduino]
 ---
