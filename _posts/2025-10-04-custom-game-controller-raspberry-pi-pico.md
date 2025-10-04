@@ -14,7 +14,7 @@ tags:
   - DIY
 ---
 
-게임을 좋아하는 사람이라면 한 번쯤은 나만의 게임 컨트롤러를 만들어보고 싶었을 것입니다. 이번에는 Raspberry Pi Pico를 이용해서 완전히 커스텀한 게임 컨트롤러를 제작해보겠습니다.
+게임을 좋아하는 사람이라면 한 번쯤은 나만의 게임 컨트롤러를 만들어보고 싶었을 것입니다. ~~사실 그냥 사는 게 훨씬 싸고 편하긴 한데~~ 이번에는 Raspberry Pi Pico를 이용해서 완전히 커스텀한 게임 컨트롤러를 제작해보겠습니다. 돈도 더 들고 시간도 더 걸리고 결과물도 더 못하지만, 나만의 컨트롤러를 만드는 재미는 돈으로 살 수 없죠!
 
 ## 준비물
 
@@ -43,9 +43,9 @@ tags:
 - **체리스위치 구멍**: 40mm × 40mm 사각형으로 뚫음
 - **아케이드 버튼 구멍**: 버튼 스펙에 맞춰 원형으로 뚫음
 
-3D 프린터가 없어서 숨고에서 견적을 받아 진행했습니다. 비용은 약 5만원 정도 들었네요. 
+3D 프린터가 없어서 숨고에서 견적을 받아 진행했습니다. 비용은 약 5만원 정도 들었네요. ~~이미 여기서부터 사는 게 더 싸다는 걸 알고 있었지만~~
 
-> 💡 **팁**: 사실 사는 게 훨씬 싸긴 합니다. 하지만 나만의 디자인으로 만드는 재미는 돈으로 살 수 없죠!
+> 💡 **팁**: 사실 사는 게 훨씬 싸긴 합니다. 5만원이면 좋은 컨트롤러 2개는 살 수 있는데, 하지만 나만의 디자인으로 만드는 재미는 돈으로 살 수 없죠!
 
 ## 2단계: 회로 구성
 
@@ -77,7 +77,7 @@ GND가 많이 필요해서 핀헤더를 이용해 GND 허브를 만들었습니�
 
 ![GND 납땜](/assets/img/game-controller/groundsolder.jpg)
 
-그리고 나머지 핀들도 각각의 핀에 맞춰서 납땜했습니다.
+그리고 나머지 핀들도 각각의 핀에 맞춰서 납땜했습니다. 손가락도 몇 번 데고 납땜도 몇 번 다시 하고...
 
 ![납땜 준비](/assets/img/game-controller/solderready.jpg)
 
@@ -114,7 +114,7 @@ void report_init() {
   memcpy(&prevReport, &report, sizeof(report));
 }
 
-// hid_task: 모든 입력 처리 및 리포트 생성을 담당 (최종 최적화)
+// hid_task: 모든 입력 처리 및 리포트 생성을 담당
 void hid_task() {
   uint32_t pins = ~sio_hw->gpio_in & pin_mask;
 
@@ -156,7 +156,7 @@ void hid_task() {
 
 // send_report: 상태가 변경되었을 때만 리포트를 전송
 void send_report() {
-  // x, y, hat 등은 항상 0이므로 버튼 값만 비교해도 충분
+  // x, y, hat 등은 항상 0이므로 버튼 값만 비교
   if (prevReport.buttons != report.buttons) {
     if ( TinyUSBDevice.mounted() && usb_hid.ready() ) {
       usb_hid.sendReport(0, &report, sizeof(report));
@@ -193,7 +193,7 @@ void loop() {
 
 - **16개 버튼 지원**: 방향키 4개 + 액션 버튼 12개
 - **SOCD 처리**: 동시에 반대 방향을 누르면 무효화 (게임에서 일반적인 규칙)
-- **최적화된 입력 처리**: 하드웨어 레지스터를 직접 사용해 빠른 응답
+- **입력 처리**: 하드웨어 레지스터를 직접 사용
 - **USB HID 호환**: 표준 게임패드로 인식되어 대부분의 게임에서 사용 가능
 
 ## 5단계: 최종 테스트
@@ -202,6 +202,23 @@ void loop() {
 
 모든 납땜이 완료된 후 다시 [Hardware Tester](https://hardwaretester.com/gamepad)에서 테스트했습니다. 모든 버튼이 정상적으로 작동하는 것을 확인했습니다.
 
+## 6단계: 실제 게임플레이 테스트
+
+이제 진짜 게임에서 테스트해볼 시간입니다! 드디어 이 고생의 결실을 맛볼 시간이 왔네요. 완성된 컨트롤러로 실제 게임을 플레이해보겠습니다.
+
+![게임플레이 장면](/assets/img/game-controller/gameplay1.jpg)
+
+### 게임플레이 영상
+
+<video width="100%" controls preload="metadata">
+  <source src="{{ '/assets/img/game-controller/gameplay.mp4' | relative_url }}" type="video/mp4">
+  <p>브라우저가 비디오 태그를 지원하지 않습니다. 
+  <a href="{{ '/assets/img/game-controller/gameplay.mp4' | relative_url }}">여기서 영상을 다운로드</a>하세요.</p>
+</video>
+
+> **참고**: 비디오가 재생되지 않는다면 위의 다운로드 링크를 클릭해보세요.
+
+
 ## 완성!
 
 ![게임패드 테스터 결과](/assets/img/game-controller/gamepadtester.jpg)
@@ -209,4 +226,4 @@ void loop() {
 드디어 나만의 커스텀 게임 컨트롤러가 완성되었습니다! 
 
 ### 총평
-직접 만들면 비싸니까 시제품 사세요 ㅠ
+직접 만들면 비싸니까 시제품 사세요 ㅠ ~~하지만 만드는 재미는 있으니까 한 번쯤은 해볼 만합니다~~
